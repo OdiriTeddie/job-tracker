@@ -42,10 +42,10 @@ const allJobsSlice = createSlice({
   name: "allJobs",
   initialState,
   reducers: {
-    showLoading: () => {
+    showLoading: (state) => {
       state.isLoading = true;
     },
-    hideLoading: () => {
+    hideLoading: (state) => {
       state.isLoading = false;
     },
   },
